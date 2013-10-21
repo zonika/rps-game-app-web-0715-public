@@ -14,11 +14,11 @@ branch.
 
 ## Instructions
 
-### Create the game
+### Create the game model
 
-Build the RPSGame class according to the Rspec tests.
+Build the RPSGame model according to the Rspec tests.
 
-### Create the app
+### Create the Sinatra app
 
 Integrate your RPSGame class with the Sinatra application in app.rb.
 
