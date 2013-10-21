@@ -1,8 +1,6 @@
 ---
-  tags:
-    - sinatra
-  languages:
-    - ruby
+  tags: sinatra
+  languages: ruby
 ---
 
 # Rock, Paper, Scissors
