@@ -16,7 +16,7 @@ branch.
 
 ### Create the game model
 
-Build the RPSGame model according to the Rspec tests.
+Build the RPSGame model according to the rspec tests.
 
 ### Create the Sinatra app
 
