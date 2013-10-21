@@ -9,8 +9,7 @@
 
 ## Deliverable
 
-Fork this repository. Your final solution should be in your master
-branch.
+Fork this repository. Your solution should be delivered in your master branch.
 
 ## Instructions
 
@@ -22,9 +21,10 @@ Build the RPSGame model according to the rspec tests.
 
 Integrate your RPSGame class with the Sinatra application in app.rb.
 
-The game will be played by modifying the URL to specify your play (rock,
-paper, or scissors).
+The application will serve 1 route, GET requests to  the path /rps/:play, where
+the value of :play will be used as the players throw (rock, paper, or
+scissors). 
 
-The Sinatra application should serve a page that displays the move that the
-player made, the move that the computer made, and whether the player
-won, lost, or tied. 
+The Sinatra application should serve an HTML page that displays the move that
+the player made, the move that the computer made, and whether the player won,
+lost, or tied. 
