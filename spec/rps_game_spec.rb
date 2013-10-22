@@ -13,6 +13,24 @@ describe RPSGame do
     end
   end
 
+  describe "#valid_play?" do
+    it "should return true for the symbol :paper" do
+      RPSGame.valid_play?(:paper)
+    end
+
+    it "should return true for the symbol :rock" do
+      RPSGame.valid_play?(:rock)
+    end
+
+    it "should return true for the symbol scissors" do
+      RPSGame.valid_play?(:scissors)
+    end
+
+    it "should return false for other values" do
+      RPSGame.valid_play?(:dynamite)
+    end
+  end
+
   describe "#computer_play" do
     it "should return the computer's play" do
       RPSGame.valid_play?(RPSGame.new(:rock).computer_play).should == true
