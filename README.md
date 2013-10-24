@@ -54,7 +54,8 @@ Change your application to have exactly 4 routes:
   - Renders a form that provides the RPS choices with a radio button element.
 * POST /rps_game
   - Form submissions should be sent here. The result of the game should
-    be stored in the database.
+    be stored in the database. Users should be redirected to GET
+/rps_game_result/:id.
 * GET /rps_game_result/:id
   - Renders a form that provides the RPS choices with a radio button element.
 * GET /rps_game_results
