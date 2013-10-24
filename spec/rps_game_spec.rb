@@ -105,4 +105,21 @@ describe RPSGame do
       game.lost?.should == false
     end
   end
+
+  describe "#result" do
+    it "should return an unsaved RPSGameResult model" do
+      game = RPSGame.new(:rock)
+      game.stub(:computer_play) { :paper }
+
+      game_result = game.result
+
+      game_result.class.should == RPSGameResult
+      game_result.exists?.should == false
+
+      game_result.play.should == "rock"
+      game_result.computer_play.should == "paper"
+      game_result.won.should == false
+      game_result.created_at.class.should == Time
+    end
+  end
 end
