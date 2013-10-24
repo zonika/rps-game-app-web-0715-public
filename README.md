@@ -37,7 +37,8 @@ like:
 
 * play - human player's play
 * computer_play - the computer's play
-* won - true if the player won, false if not
+* won - true if the player won, false if not. Use the Boolean column
+  type.
 * tied - true if their was a tie, false if not. Use the Boolean column
   type.
 * created_at - approximately when the game results were calculated. Use
