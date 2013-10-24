@@ -57,6 +57,6 @@ Change your application to have exactly 4 routes:
     be stored in the database. Users should be redirected to GET
 /rps_game_result/:id.
 * GET /rps_game_result/:id
-  - Renders a form that provides the RPS choices with a radio button element.
+  - Displays the result of the game with primary key :id.
 * GET /rps_game_results
   - A list of the last 20 game results ordered by most to least recent. 
