@@ -37,24 +37,43 @@ Work in your existing repository. Your solution should be delivered in your mast
 
 ### Get the tests to pass
 
-Create an RPSGameResults model and get the tests passing
+Create an RPSGameResults model backed by Sequel and get the tests passing.
+
+Use a migration and run it manually.
 
 ### Update the Sinatra application
 
+You should move your require statements into your
+config/environment.rb file. Your config.ru should like this:
+
 ```ruby
-  get '/rps_game_result/:id' do
-    # Show the result of a specific game
-  end
+  require './config/environment'
 
-  get '/rps_game_results' do
-    # Show the 20 most recent game results
-  end
-
-  post '/rps_game' do
-    # Where the form submission goes
-  end
-
-  get '/rps_game' do
-    # The game form
-  end
+  run GameApp
 ```
+
+Change your application to have 4 routes:
+
+GET /rps_game_result/:id
+GET /rps_game_results
+POST /rps_game
+GET /rps_game
+
+GET /rps_game page should render a form that provides the RPS choices
+with a radio button element.
+
+Submitting the form should send POST /rps_game. The POST /rps_game should
+store the result of the game in a table called "rps_game_results", which has
+the following columns:
+
+* play - the player's play
+* computer_play - the computer's play
+* won - true if the player won, false if not
+* tied - true if their was a tie, false if not
+* created_at - approximately when the game results were calculated
+
+Install the Sequel gem to manage your database using Bundler
+(that means having a Gemfile!). Use a migration to create your table.
+
+Refactor your existing RpsGame class to be a Sequel::Model that is
+backed by the rps_games table.
