@@ -50,10 +50,10 @@ Use a migration and run it manually.
 
 Change your application to have exactly 4 routes:
 
-GET /rps_game_result/:id
-GET /rps_game_results
-POST /rps_game
-GET /rps_game
+* GET /rps_game_result/:id
+* GET /rps_game_results
+* POST /rps_game
+* GET /rps_game
 
 GET /rps_game page should render a form that provides the RPS choices
 with a radio button element.
