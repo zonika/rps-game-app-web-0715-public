@@ -50,13 +50,12 @@ Use a migration and run it manually.
 
 Change your application to have exactly 4 routes:
 
-* GET /rps_game_result/:id
-* GET /rps_game_results
-* POST /rps_game
 * GET /rps_game
-
-GET /rps_game page should render a form that provides the RPS choices
-with a radio button element.
-
-Submitting the form should POST to /rps_game. The POST /rps_game action should
+  - Renders a form that provides the RPS choices with a radio button element.
 store the result.
+* POST /rps_game
+  - Form submissions should be sent here. The result of the game should
+* GET /rps_game_result/:id
+  - Renders a form that provides the RPS choices with a radio button element.
+* GET /rps_game_results
+  - A list of the last 20 game results ordered by most to least recent. 
