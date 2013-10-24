@@ -25,6 +25,10 @@ config/environment.rb file. Your config.ru should like this:
   run GameApp
 ```
 
+The project base has been updated with the correct configuration. Feel
+free to use this branch, which includes a solution to part 1 and has
+been correctly configured (minus a few things).
+
 ### Get the tests to pass
 
 Create an RPSGameResults model backed by Sequel and get the tests passing.

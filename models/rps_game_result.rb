@@ -1,0 +1,2 @@
+class RPSGameResult
+end
