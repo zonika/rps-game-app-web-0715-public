@@ -3,7 +3,7 @@
   languages: ruby
 ---
 
-# Rock, Paper, Scissors - Part 2 - Persistence
+# Part 2 - Persistence
 
 ## Deliverable
 
