@@ -11,13 +11,10 @@ Work in your existing repository. Your solution should be delivered in your mast
 
 ## Instructions
 
-### Get the tests to pass
+### Update your infrastructure
 
-Create an RPSGameResults model backed by Sequel and get the tests passing.
-
-Use a migration and run it manually.
-
-### Update the Sinatra application
+Put all the gems you'll be using in a Gemfile.
+Make sure to set up bundler correctly! (like in our bundler lab).
 
 You should move your require statements into your
 config/environment.rb file. Your config.ru should like this:
@@ -27,6 +24,14 @@ config/environment.rb file. Your config.ru should like this:
 
   run GameApp
 ```
+
+### Get the tests to pass
+
+Create an RPSGameResults model backed by Sequel and get the tests passing.
+
+Use a migration and run it manually.
+
+### Update the Sinatra application
 
 Change your application to have 4 routes:
 
