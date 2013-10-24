@@ -30,7 +30,9 @@ been correctly configured (minus a few things).
 
 ### Get the tests to pass
 
-Create an RPSGameResults model backed by Sequel and get the tests passing.
+Create an RPSGameResults model backed by Sequel and get the tests passing. If
+you're not building off of the provided solution to part 1, then just copy/paste
+the specs into your project.
 
 RPSGameResults should be stored in an "rps_game_results" table, which looks
 like: 
