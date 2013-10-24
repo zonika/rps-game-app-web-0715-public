@@ -7,11 +7,27 @@
 
 ## Deliverable
 
-Work in your existing repository. Your solution should be delivered in your master branch.
+Work in your existing repository. Your solution should be delivered in a
+branch called "part-2-solution".
 
 ## Instructions
 
+### Grab the new code
+
+In your fork, `fetch` from this repository.
+
+This code will be in the `part-2` branch.
+
+Feel free to build your solution off this branch (which
+includes the solution to part 1 minus the views and routes).
+
+If you'd like to use your existing solution, copy the updated spec
+folder into your personal solution.
+
 ### Update your infrastructure
+
+If you're working with your own solution, you'll need to update your
+environment. It should mirror the environment setup in this branch.
 
 Put all the gems you'll be using in a Gemfile.
 Make sure to set up bundler correctly! (like in our bundler lab).
@@ -24,9 +40,6 @@ config/environment.rb file. Your config.ru should like this:
 
   run GameApp
 ```
-
-Feel free to use this branch, which includes a solution to part 1 and has
-been correctly configured (minus a few things).
 
 ### Get the tests to pass
 
