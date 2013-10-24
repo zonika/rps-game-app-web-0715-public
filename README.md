@@ -60,9 +60,3 @@ with a radio button element.
 
 Submitting the form should POST to /rps_game. The POST /rps_game action should
 store the result.
-
-Install the Sequel gem to manage your database using Bundler
-(that means having a Gemfile!). Use a migration to create your table.
-
-Refactor your existing RpsGame class to be a Sequel::Model that is
-backed by the rps_games table.
