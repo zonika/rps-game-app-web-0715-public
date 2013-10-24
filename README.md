@@ -25,19 +25,29 @@ config/environment.rb file. Your config.ru should like this:
   run GameApp
 ```
 
-The project base has been updated with the correct configuration. Feel
-free to use this branch, which includes a solution to part 1 and has
+Feel free to use this branch, which includes a solution to part 1 and has
 been correctly configured (minus a few things).
 
 ### Get the tests to pass
 
 Create an RPSGameResults model backed by Sequel and get the tests passing.
 
+RPSGameResults should be stored in an "rps_game_results" table, which looks
+like: 
+
+* play - player's play
+* computer_play - the computer's play
+* won - true if the player won, false if not
+* tied - true if their was a tie, false if not. Use the Boolean column
+  type.
+* created_at - approximately when the game results were calculated. Use
+  the DateTime column type.
+
 Use a migration and run it manually.
 
 ### Update the Sinatra application
 
-Change your application to have 4 routes:
+Change your application to have exactly 4 routes:
 
 GET /rps_game_result/:id
 GET /rps_game_results
@@ -47,14 +57,8 @@ GET /rps_game
 GET /rps_game page should render a form that provides the RPS choices
 with a radio button element.
 
-Submitting the form should send POST /rps_game. The POST /rps_game should
-store the result of the game in a table called "rps_game_results", which has
-
-* play - the player's play
-* computer_play - the computer's play
-* won - true if the player won, false if not
-* tied - true if their was a tie, false if not
-* created_at - approximately when the game results were calculated
+Submitting the form should POST to /rps_game. The POST /rps_game action should
+store the result.
 
 Install the Sequel gem to manage your database using Bundler
 (that means having a Gemfile!). Use a migration to create your table.
