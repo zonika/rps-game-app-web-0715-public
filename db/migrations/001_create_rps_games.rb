@@ -2,7 +2,7 @@ Sequel.migration do
   change do
     create_table(:rps_game_results) do
       primary_key :id
-      String :play
+      String :human_play
       String :computer_play
       Boolean :won
       Boolean :tied

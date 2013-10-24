@@ -35,7 +35,7 @@ Create an RPSGameResults model backed by Sequel and get the tests passing.
 RPSGameResults should be stored in an "rps_game_results" table, which looks
 like: 
 
-* play - human player's play
+* human_play - human player's play
 * computer_play - the computer's play
 * won - true if the player won, false if not. Use the Boolean column
   type.

@@ -38,7 +38,7 @@ class RPSGame
 
   def result
     RPSGameResult.new({
-      play: self.play,
+      human_play: self.play,
       computer_play: self.computer_play,
       won: self.won?,
       tied: self.tied?,
