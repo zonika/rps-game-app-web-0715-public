@@ -1,5 +1,5 @@
 ---
-  tags: sinatra
+  tags: sinatra, web
   languages: ruby
 ---
 
