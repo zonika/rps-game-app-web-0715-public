@@ -1,6 +1,7 @@
 ---
   tags: sinatra, web
   languages: ruby
+  resources: 1
 ---
 
 # Rock, Paper, Scissors
@@ -26,3 +27,6 @@ scissors).
 The Sinatra application should serve an HTML page that displays the move that
 the player made, the move that the computer made, and whether the player won,
 lost, or tied. 
+
+## Resources
+* [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Chapter 1 Taking the Stage](http://books.flatironschool.com/books/101), page 15
