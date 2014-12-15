@@ -15,25 +15,28 @@ describe RPSGame do
 
   describe "#valid_play?" do
     it "should return true for the symbol :paper" do
-      RPSGame.valid_play?(:paper)
+      expect(RPSGame.valid_play?(:paper)).to eq(true)
     end
 
     it "should return true for the symbol :rock" do
-      RPSGame.valid_play?(:rock)
+      expect(RPSGame.valid_play?(:rock)).to eq(true)
     end
 
     it "should return true for the symbol scissors" do
-      RPSGame.valid_play?(:scissors)
+      expect(RPSGame.valid_play?(:scissors)).to eq(true)
     end
 
     it "should return false for other values" do
-      RPSGame.valid_play?(:dynamite)
+      expect(RPSGame.valid_play?(:dynamite)).to eq(false)
     end
   end
 
   describe "#computer_play" do
     it "should return the computer's play" do
-      expect(RPSGame.valid_play?(RPSGame.new(:rock).computer_play)).to eq(true)
+      game = RPSGame.new(:rock)
+      allow(game).to receive(:computer_play) { :scissors }
+      # What's going on here ^? We're stubbing out the method computer_play and telling it to return a specific value, :scissors. You can read more about RSpec mocking and stubbing here: https://relishapp.com/rspec/rspec-mocks/docs
+      expect(game.computer_play).to eq(:scissors)
     end
   end
 
