@@ -32,11 +32,11 @@ describe RPSGame do
   end
 
   describe "#computer_play" do
+    let(:choices) { [:scissors, :rock, :paper] }
     it "should return the computer's play" do
       game = RPSGame.new(:rock)
-      allow(game).to receive(:computer_play) { :scissors }
-      # What's going on here ^? We're stubbing out the method computer_play and telling it to return a specific value, :scissors. You can read more about RSpec mocking and stubbing here: https://relishapp.com/rspec/rspec-mocks/docs
-      expect(game.computer_play).to eq(:scissors)
+
+      expect(choices).to include(game.computer_play)
     end
   end
 
