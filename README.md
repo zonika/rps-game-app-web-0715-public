@@ -14,7 +14,7 @@ Fork this repository. Your solution should be delivered in your master branch.
 
 ### Create the game model
 
-Build the RPSGame model according to the rspec tests.
+Build the RPSGame model according to the learn tests.
 
 ### Create the Sinatra app
 
