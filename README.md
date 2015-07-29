@@ -1,8 +1,4 @@
----
-  tags: sinatra, web
-  languages: ruby
-  resources: 1
----
+
 
 # Rock, Paper, Scissors
 
